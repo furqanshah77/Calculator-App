@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f3f3;
+    display: flex;
+    color: #252422;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    background-color: transparent;
+    border: 1px solid #717377;
+    border-radius: 2px;
+    padding: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    margin: 0 auto;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    width: 295px;
+    border: none;
+    background: #f3f3f3;
+    font-size: 20px;
+    text-align: right;
+    color: #717377;
+    bottom: 0;
+    padding: 20px 5px;
+
+}
+
+.para {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+i {
+    font-weight: 500;
+}
+
+.result-input {
+    width: 300px;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    padding: 8px 0px 20px 0px;
+    font-weight: 700;
+    color: #252422;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: #c3c3c3;
+}
+
+.equal-btn {
+    background-color: #005A9E;
+    color: #fff;
+}
+
+.operator-btn {
+    font-size: 22px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width : 520px) {
+    .logo {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width : 390px) {
+    button {
+        width: 22%;
+        height: 50px;
+    }
+
+    input,
+    .result-input {
+        width: 100%;
+
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
